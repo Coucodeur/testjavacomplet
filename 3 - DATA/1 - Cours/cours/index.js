@@ -71,3 +71,4 @@ for (const user of data) {
     user.age + " ans"
   } maitrise :  ${user.technos}</li>`;
 }
+// on a dit 32:52 !! (push depuis le mac)
