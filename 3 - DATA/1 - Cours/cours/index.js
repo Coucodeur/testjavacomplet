@@ -1,4 +1,4 @@
-// Rappel types de données
+ // Rappel types de données
 let string = "Chaine";
 let number = 13;
 let boolean = true;
@@ -87,3 +87,23 @@ for (i = 0; i < data.length; i++) {
 }
 
 //  le 25/05 on s'arrete à 43:25 | les switch case :)
+ 
+document.body.addEventListener('click', (e) => {
+  switch (e.target.id) {
+    case 'php':
+      document.body.style.background = "blue"
+      console.log('php click');
+      break;
+    case 'javascript':
+      document.body.style.background = "yellow"
+      console.log('java click');
+      break;
+    case 'python':
+      document.body.style.background = "purple"
+      console.log('python click');
+      break;
+    default:
+      document.body.style.background = "none"
+      console.log('click ailleur');
+  }
+})
