@@ -23,7 +23,7 @@ body {
   top: 0;
   transform: translateY(-4px);
   right: -5px;
-  animation: anim 0.8s linear infinite;
+  animation: anim 1.5s linear infinite;
 }
 @keyframes anim {
   50% {
