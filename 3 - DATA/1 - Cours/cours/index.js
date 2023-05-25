@@ -67,8 +67,23 @@ do {
 } while (d < 5);
 
 for (const user of data) {
-  document.body.innerHTML += `<li>${user.pseudo} ${
-    user.age + " ans"
-  } maitrise :  ${user.technos}</li>`;
+  // document.body.innerHTML += `<li>${user.pseudo} ${
+  //   user.age + " ans"
+  // } maitrise :  ${user.technos}</li>`;
 }
 // on a dit 32:52 !! (push depuis le mac)
+
+// on déclare la valeur de i | jusqu'ou on boucle |
+for (i = 0; i < data.length; i++) {
+  // document.body.innerHTML +=
+  //   "<h2>" +
+  //   data[i].pseudo +
+  //   " " +
+  //   data[i].age +
+  //   " ans " +
+  //   "Technos matrisées : " +
+  //   data[i].technos +
+  //   "</h2>";
+}
+
+//  le 25/05 on s'arrete à 43:25 | les switch case :)
