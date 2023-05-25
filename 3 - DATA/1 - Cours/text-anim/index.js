@@ -14,9 +14,12 @@ createLetter();
 
 const loop = () => {
   setTimeout(() => {
+    if (letterIndex < array.length) => {
     letterIndex++;
     createLetter();
-  }, 50);
+    loop()
+  }
+  }, 100);
 };
 
 loop();
