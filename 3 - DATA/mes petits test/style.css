@@ -9,17 +9,19 @@ body {
 }
 h1 {
     text-transform: uppercase;
+    text-align: center;
 }
 .boiteAouts {
-    border: 3px solid rgb(66, 32, 203);
+    border: 5px solid rgb(66, 32, 203);
     margin: 10px 5px;
     border-radius: 25px;
     padding: 10px;
     transition: 0.3s ease-in-out;
 }
 .boiteAouts:hover {
-    border: 7px solid rgb(220, 13, 13);
+    border: 5px solid rgb(188,23,42);
     border-radius: 2px;
+    background: rgb(74, 74, 74);
 }
 .logoContainer img {
     width: 70px;
@@ -33,14 +35,14 @@ h1 {
 }
 input[type="radio"] {
     display: none;
-    transition: 1s;
-
 }
 input[type="radio"]:checked + label {
-    color: red;
+    /* color: rgb(188,23,42); */
+    border: 2px solid rgb(235,209,26) ;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
     transform: scale(1.3);
     filter: brightness(150%);
-    transition: 0.5s;
+    transition: 0.3s;
   }
 label {
     border-radius: 5px;
@@ -50,4 +52,21 @@ label {
     height: 75px;
     text-align: center;
     background: grey;
+}
+.data {
+    text-align: center;
+    min-width: 400px;
+    margin-top: 50px;
+}
+.submit {
+    text-align: center;
+    min-width: 400px;
+    margin-top: 20px;
+}
+.btnCalc {
+    background: rgb(188,23,42);
+    border: 2px solid rgb(235,209,26);
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
 }
