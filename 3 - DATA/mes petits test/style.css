@@ -6,6 +6,8 @@
 }
 body {
     background: rgb(159, 159, 159);
+    max-width: 500px;
+    margin: auto;    
 }
 h1 {
     text-transform: uppercase;
@@ -37,7 +39,6 @@ input[type="radio"] {
     display: none;
 }
 input[type="radio"]:checked + label {
-    /* color: rgb(188,23,42); */
     border: 2px solid rgb(235,209,26) ;
     background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
     transform: scale(1.3);
@@ -53,7 +54,7 @@ label {
     text-align: center;
     background: grey;
 }
-.data {
+.dataContainer {
     text-align: center;
     min-width: 400px;
     margin-top: 50px;
@@ -62,11 +63,17 @@ label {
     text-align: center;
     min-width: 400px;
     margin-top: 20px;
+    margin-bottom: 50px;
 }
 .btnCalc {
-    background: rgb(188,23,42);
-    border: 2px solid rgb(235,209,26);
-    border-radius: 10px;
+    height: 60px;
     width: 200px;
-    height: 50px;
+    color: rgb(235,209,26);
+    border-radius: 20px;
+background: #4a4a4a;
+box-shadow:  22px 22px 45px #2d2d2d,
+             -22px -22px 45px #676767;
+}
+input[type="number"] {
+    width: 60%;
 }
