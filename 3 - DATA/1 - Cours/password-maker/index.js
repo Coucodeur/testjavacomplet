@@ -20,8 +20,14 @@ function generate() {
   }
   if (symbols.checked) {
     dataPass += dataSymbols;
-  } else {
-    alert("veuillez selectionner un critère");
+  }
+  if (
+    !lowercase.checked &&
+    !uppercase.checked &&
+    !numbers.checked &&
+    !symbols.checked
+  ) {
+    alert("Veuillez sélectionner un critère");
     return;
   }
 

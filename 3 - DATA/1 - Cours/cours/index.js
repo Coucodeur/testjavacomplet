@@ -88,6 +88,7 @@ for (i = 0; i < data.length; i++) {
 
 //  le 25/05 on s'arrete à 43:25 | les switch case :)
 
+// ********** EVEMENT AU CLICK ON CHANGE DE STYLE **************
 document.body.addEventListener("click", (e) => {
   switch (e.target.id) {
     case "php":
@@ -107,3 +108,29 @@ document.body.addEventListener("click", (e) => {
       console.log("click ailleur");
   }
 });
+
+// -------
+// Les dates
+// -------
+
+// Date classique :
+let date = new Date();
+
+// Timestamp
+let timestamp = Date.parse(date);
+console.log(timestamp);
+
+// IsoString
+console.log(date.toISOString());
+
+// ---------------
+// Le Destucturing
+// ---------------
+let moreData = {
+  desVar: ["Element 1", "Element 2"],
+  Peug: ["306Maxi", "205Gti", "106Rallye"],
+};
+console.log(moreData.desVar);
+let { desVar } = moreData;
+console.log(desVar[0]);
+// on s'arrete à 3H02 du cours DATA
