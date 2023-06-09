@@ -109,28 +109,76 @@ document.body.addEventListener("click", (e) => {
   }
 });
 
-// -------
+//
+//
+// ---------
 // Les dates
-// -------
-
+// ---------
+//
+//
+console.log("------------- ICI COMMENCENT LES DATES ----------");
 // Date classique :
 let date = new Date();
-
-// Timestamp
+console.log(date + " !!affiche la date stockée dans date!!");
+// Timestamp :
 let timestamp = Date.parse(date);
-console.log(timestamp);
+console.log(
+  timestamp +
+    " !!timestamp = affiche le temps écoulé depuis 1er janvier 1970 en milisecondes!!"
+);
 
-// IsoString
-console.log(date.toISOString());
-
+// IsoString :
+console.log(date.toISOString() + " !!affiche la date au format européen!!");
+let iso = date.toISOString();
+console.log(
+  iso +
+    " !!affiche la date au format européen, mais stockée dans une variable!!"
+);
+//
+//
 // ---------------
 // Le Destucturing
 // ---------------
+//
+//
+console.log("------------- ICI COMMENCE LE DESTRUCTURING ----------");
+
 let moreData = {
-  desVar: ["Element 1", "Element 2"],
-  Peug: ["306Maxi", "205Gti", "106Rallye"],
+  destVar: ["Element 1", "Element 2"],
 };
-console.log(moreData.desVar);
-let { desVar } = moreData;
-console.log(desVar[0]);
-// on s'arrete à 3H02 du cours DATA
+console.log(
+  moreData.destVar + " !!on affiche la valeur des objets moreData.destVar!!"
+);
+const { destVar } = moreData;
+console.log(
+  destVar +
+    " !!on affiche la valeur des objets moreData.destVar, mais via un raccourcis!!"
+);
+
+let array5 = [70, 80, 90];
+console.log(array5[0] + " on affiche le premier index de array5");
+console.log(array5[1] + " on affiche le deuxième index de array5");
+console.log(array5[2] + " on affiche le troisième index de array5");
+let [x, y, z] = array5;
+console.log(x + " on affiche le premier index de array5 mais en raccouris `x`");
+console.log(
+  y + " on affiche le deuxième index de array5 mais en raccourcis 'y'"
+);
+console.log(
+  z + " on affiche le troisième index de array5 mais en raccourcis `z`"
+);
+console.log(iso);
+const dateDestructuring = (chaine) => {
+  let newDate = chaine.split("T")[0];
+  [y, m, d] = newDate.split("-");
+  return [d, m, y].join("/");
+};
+console.log(dateDestructuring(iso));
+//
+//
+// --------------
+//  Les Datasets
+// --------------
+//
+//
+console.log("------------ ICI COMMENCENT LES DATASETS -------------");
