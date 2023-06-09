@@ -103,6 +103,9 @@ document.body.addEventListener("click", (e) => {
       document.body.style.background = "purple";
       console.log("python click");
       break;
+    case "dateBtn":
+      console.log(dateDestructuring(iso));
+      break;
     default:
       document.body.style.background = "none";
       console.log("click ailleur");
@@ -182,3 +185,40 @@ console.log(dateDestructuring(iso));
 //
 //
 console.log("------------ ICI COMMENCENT LES DATASETS -------------");
+//  3h12
+// L'idée est de rajouter des ID à la volée selon nos besoins
+console.log("L'idée est de rajouter des ID à la volée selon nos besoins");
+const h3js = document.getElementById("javascript");
+// console.log(h3js.dataset.lang);
+const h3 = document.querySelectorAll("h3");
+
+h3.forEach((language) => console.log(language.dataset));
+
+//
+//
+// --------------
+//  Les REGEX
+// --------------
+//
+//
+console.log("------------ ICI COMMENCENT LES REGEX -------------");
+let mail = "from_scratch33@gmail.com";
+console.log(mail.search(/@/));
+//
+//
+//
+// ------------
+// ZONE DE TEST
+// ------------
+//
+//
+//
+// console.log("++++++++++  ZONE DE TEST  +++++++++");
+// console.log(iso);
+// const TESTdateDestructuring = (chaine) => {
+//   let newDate = chaine.split("T");
+//   // [y, m, d] = newDate.split("-");
+//   // return [d, m, y].join("/");
+//   console.log(newDate);
+// };
+// TESTdateDestructuring(iso);
